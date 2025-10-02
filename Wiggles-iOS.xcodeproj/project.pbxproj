@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -27,7 +27,18 @@
 		73E4B4D925EE75B10020C282 /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E4B4D825EE75B10020C282 /* DetailsViewModel.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		4058C0652E8DB564009D06B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 73CEC9D825EE0A8F008362CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 73CEC9DF25EE0A8F008362CE;
+			remoteInfo = "Wiggles-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		4058C05F2E8DB564009D06B5 /* Wiggles-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wiggles-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		73CEC9E025EE0A8F008362CE /* Wiggles-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wiggles-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		73CEC9E325EE0A8F008362CE /* Wiggles_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wiggles_iOSApp.swift; sourceTree = "<group>"; };
 		73CEC9E525EE0A8F008362CE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -50,7 +61,18 @@
 		73E4B4D825EE75B10020C282 /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		4058C0602E8DB564009D06B5 /* Wiggles-iOSUITests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "Wiggles-iOSUITests"; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
+		4058C05C2E8DB564009D06B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		73CEC9DD25EE0A8F008362CE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -65,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				73CEC9E225EE0A8F008362CE /* Wiggles-iOS */,
+				4058C0602E8DB564009D06B5 /* Wiggles-iOSUITests */,
 				73CEC9E125EE0A8F008362CE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -73,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				73CEC9E025EE0A8F008362CE /* Wiggles-iOS.app */,
+				4058C05F2E8DB564009D06B5 /* Wiggles-iOSUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -162,6 +186,29 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		4058C05E2E8DB564009D06B5 /* Wiggles-iOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4058C0692E8DB564009D06B5 /* Build configuration list for PBXNativeTarget "Wiggles-iOSUITests" */;
+			buildPhases = (
+				4058C05B2E8DB564009D06B5 /* Sources */,
+				4058C05C2E8DB564009D06B5 /* Frameworks */,
+				4058C05D2E8DB564009D06B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4058C0662E8DB564009D06B5 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				4058C0602E8DB564009D06B5 /* Wiggles-iOSUITests */,
+			);
+			name = "Wiggles-iOSUITests";
+			packageProductDependencies = (
+			);
+			productName = "Wiggles-iOSUITests";
+			productReference = 4058C05F2E8DB564009D06B5 /* Wiggles-iOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		73CEC9DF25EE0A8F008362CE /* Wiggles-iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 73CEC9EF25EE0A92008362CE /* Build configuration list for PBXNativeTarget "Wiggles-iOS" */;
@@ -185,9 +232,13 @@
 		73CEC9D825EE0A8F008362CE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1240;
+				LastSwiftUpdateCheck = 2600;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
+					4058C05E2E8DB564009D06B5 = {
+						CreatedOnToolsVersion = 26.0.1;
+						TestTargetID = 73CEC9DF25EE0A8F008362CE;
+					};
 					73CEC9DF25EE0A8F008362CE = {
 						CreatedOnToolsVersion = 12.4;
 					};
@@ -207,11 +258,19 @@
 			projectRoot = "";
 			targets = (
 				73CEC9DF25EE0A8F008362CE /* Wiggles-iOS */,
+				4058C05E2E8DB564009D06B5 /* Wiggles-iOSUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4058C05D2E8DB564009D06B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		73CEC9DE25EE0A8F008362CE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -227,6 +286,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4058C05B2E8DB564009D06B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		73CEC9DC25EE0A8F008362CE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -249,7 +315,66 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		4058C0662E8DB564009D06B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 73CEC9DF25EE0A8F008362CE /* Wiggles-iOS */;
+			targetProxy = 4058C0652E8DB564009D06B5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		4058C0672E8DB564009D06B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "wale.Wiggles-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Wiggles-iOS";
+			};
+			name = Debug;
+		};
+		4058C0682E8DB564009D06B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "wale.Wiggles-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Wiggles-iOS";
+			};
+			name = Release;
+		};
 		73CEC9ED25EE0A92008362CE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -413,6 +538,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4058C0692E8DB564009D06B5 /* Build configuration list for PBXNativeTarget "Wiggles-iOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4058C0672E8DB564009D06B5 /* Debug */,
+				4058C0682E8DB564009D06B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		73CEC9DB25EE0A8F008362CE /* Build configuration list for PBXProject "Wiggles-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

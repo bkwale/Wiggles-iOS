@@ -29,6 +29,7 @@ struct DetailsView: View {
                             HStack {
                                 Button(action: { self.presentationMode.wrappedValue.dismiss() },
                                        label: { Image(IMAGE_BACK_ICON).resizable().frame(width: 34, height: 34) })
+                                .accessibilityIdentifier("backButton")
                                 Spacer()
                                 Button(action: { viewModel.favouriteMethod() },
                                        label: { Image(IMAGE_FAV_ICON).resizable().frame(width: 26, height: 26) })
